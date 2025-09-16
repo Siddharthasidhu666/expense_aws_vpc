@@ -22,3 +22,8 @@ output "database_subnet_ids" {
   value = aws_subnet.database-subnet[*].id
 
 }
+
+output "db_subnet_group_name" {
+    value = aws_db_subnet_group.group.name
+  
+}
